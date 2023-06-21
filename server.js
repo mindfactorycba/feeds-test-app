@@ -6,6 +6,7 @@ app.use(express.json());
 
 
 app.post('/feeds', (req, res) => {
+  console.log("El body que recibimos fue:" + req.body);
   res.status(200).json({ success: true });
 });
 
