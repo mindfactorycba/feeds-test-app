@@ -1,13 +1,2 @@
 [build]
   command = "npm install"
-
-[[redirects]]
-  from = "/ping"
-  to = "/.netlify/functions/ping"
-  status = 200
-
-[[redirects]]
-  from = "/feeds"
-  to = "/.netlify/functions/feeds"
-  status = 200
-  force = true
