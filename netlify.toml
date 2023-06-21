@@ -1,2 +1,14 @@
 [build]
-  command = "npm install express"
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/ping"
+  to = "/.netlify/functions/ping"
+  status = 200
+
+[[redirects]]
+  from = "/feeds"
+  to = "/.netlify/functions/feeds"
+  status = 200
+  force = true
