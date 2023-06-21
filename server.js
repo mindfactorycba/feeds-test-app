@@ -6,16 +6,10 @@ app.use(express.json());
 
 
 app.post('/feeds', (req, res) => {
-  // Aquí puedes realizar cualquier lógica adicional con los datos recibidos en el cuerpo (req.body)
-
-  // Envía una respuesta exitosa con código de estado 200 y un cuerpo de éxito
   res.status(200).json({ success: true });
 });
 
 app.get('/ping', (req, res) => {
-    // Aquí puedes realizar cualquier lógica adicional con los datos recibidos en el cuerpo (req.body)
-  
-    // Envía una respuesta exitosa con código de estado 200 y un cuerpo de éxito
     res.status(200).json("pong");
   });
 
