@@ -4,10 +4,12 @@
   "description": "Una aplicación Node.js que levanta un servidor en el puerto 8080 y responde a un endpoint POST /feeds",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js",
+    "build": "echo 'No se requieren tareas de construcción para esta aplicación.'"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nodemon": "^2.0.13"
   },
     "keywords": [],
     "author": "",
